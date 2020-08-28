@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lugares Bonitos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/mrd.css" rel="stylesheet">
+    <link href="css/hotel.css" rel="stylesheet">
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="Home.html"><img id="logo" src="img/lgd.png" alt="Logotipo"></a>
+            <a href="Home.html">Home</a>
+            <a href="ToroToro.html">ToroToro</a>
+            <a href="Salar.html">SalarUyuni</a>
+            <a href="hoteles.html" class="active">Hoteles</a>
+            <a href="PlatoTipico.html">Comida Tipica</a>
+            <a href="Mapa.html">Mapa</a>
+            <a href="Contacto.html">Contacto</a>
+            <p>Potosi <span id="cc-temp"></span>&deg;C<img id="cc-img" alt="Centigrados"></p>
+            <script src="js/weatherapi.js"></script>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="ti">HOTELES DE SALR DE UYUNI</h1>
+        <div class="contenedor">
+
+            <div id="slidehotel1">
+                <script type="text/javascript">
+                    slidehotel1();
+                </script>
+            </div>
+            <article>
+                <h1>Hotel de Sal Luna Salada</h1>
+                <p>Direccion:A 25 km de Uyuni, Colchani </p>
+                <br>
+                <button class="btnreserva" onclick="verinfo1();">Reservar</button>
+            </article>
+        </div>
+        <div class="contenedor">
+            <div id="slidehotel2">
+                <script type="text/javascript">
+                    slidehotel2();
+                </script>
+            </div>
+            <article>
+                <h1>Hotel de Sal Cristal Samaña</h1>
+                <p>Direccion:Direccion:Colchani, 4 Km ingresando hacia el salar de Uyuni </p>
+                <br>
+                <button class="btnreserva" onclick="verinfo2();">Reservar</button>
+            </article>
+        </div>
+        <div class="contenedor">
+            <div id="slidehotel3">
+                <script type="text/javascript">
+                    slidehotel3();
+                </script>
+            </div>
+            <article>
+                <h1>Los Chocos</h1>
+                <p>Direccion:Calle charcas Torotoro </p>
+                <br>
+                <button class="btnreserva" onclick="verinfo3();">Reservar</button>
+            </article>
+        </div>
+    </main>
+    <div id="infohotel1">
+        <a href="#" id="salirinfohotel1"><img src="img/cerrar.png" alt=""></a>
+        <h1>Hotel de Sal Luna Salad</h1>
+        <form id="reserva1" method="post" autocomplete="off">
+            <table>
+                <tr>
+                    <td>Nombre Completo: </td>
+                    <td><input class="txtnombre" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Tipo de Habitacion</td>
+                    <td>
+                        <select>
+                                <option>Seleccione</option>
+                                <option>Basico - 50 Bs</option>
+                                <option>Mediano - 120 Bs</option>
+                                <option>Premium - 250 Bs</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numero de Tarjeta</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>CVV</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Celular: </td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td>Correo: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Dias de Estadia: </td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><button>Realizar Reserva</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="infohotel2">
+        <a href="#" id="salirinfohotel2"><img src="img/cerrar.png" alt=""></a>
+        <h1>Hotel de Sal Cristal Samaña</h1>
+        <form id="reserva2" method="post" autocomplete="off">
+            <table>
+                <tr>
+                    <td>Nombre Completo: </td>
+                    <td><input class="txtnombre" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Tipo de Habitacion</td>
+                    <td>
+                        <select>
+                                        <option>Seleccione</option>
+                                        <option>Basico - 50 Bs</option>
+                                        <option>Mediano - 120 Bs</option>
+                                        <option>Premium - 250 Bs</option>
+                                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numero de Tarjeta</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>CVV</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Celular: </td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td>Correo: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Dias de Estadia: </td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><button>Realizar Reserva</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="infohotel3">
+        <a href="#" id="salirinfohotel3"><img src="img/cerrar.png" alt=""></a>
+        <h1>Los Chocos</h1>
+        <form id="reserva3" method="post" autocomplete="off">
+            <table>
+                <tr>
+                    <td>Nombre Completo: </td>
+                    <td><input class="txtnombre" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Tipo de Habitacion</td>
+                    <td>
+                        <select>
+                                        <option>Seleccione</option>
+                                        <option>Basico - 50 Bs</option>
+                                        <option>Mediano - 120 Bs</option>
+                                        <option>Premium - 250 Bs</option>
+                                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numero de Tarjeta</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>CVV</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Celular: </td>
+                    <td><input type="tel"></td>
+                </tr>
+                <tr>
+                    <td>Correo: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Dias de Estadia: </td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><button>Realizar Reserva</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/javascript">
+        $('#infohotel1').hide();
+
+        function verinfo1() {
+            $('#infohotel1').show('slow');
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow'); //seleccionamos etiquetas,clase o identificador destino, creamos animación hacia top de la página.
+            return false;
+        }
+        $('#salirinfohotel1').click(function() {
+            $('#infohotel1').hide('slow');
+        });
+        /*DIV2*/
+        $('#infohotel2').hide();
+
+        function verinfo2() {
+            $('#infohotel2').show('slow');
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow'); //seleccionamos etiquetas,clase o identificador destino, creamos animación hacia top de la página.
+            return false;
+        };
+        $('#salirinfohotel2').click(function() {
+            $('#infohotel2').hide('slow');
+        });
+        /*DIV3*/
+        $('#infohotel3').hide();
+
+        function verinfo3() {
+            $('#infohotel3').show('slow');
+            $('html, body').animate({
+                scrollTop: 0
+            }, 'slow'); //seleccionamos etiquetas,clase o identificador destino, creamos animación hacia top de la página.
+            return false;
+        }
+        $('#salirinfohotel3').click(function() {
+            $('#infohotel3').hide('slow');
+        })
+    </script>
+</body>
+
+</html>

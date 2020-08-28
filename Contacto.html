@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lugares Bonitos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/scripts.js " type="text/javascript "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <link href="css/mrd.css " rel="stylesheet ">
+    <link href="css/formulario.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="Home.html"><img id="logo" src="img/lgd.png" alt="logotipo"></a>
+            <a href="Home.html">Home</a>
+            <a href="ToroToro.html">ToroToro</a>
+            <a href="Salar.html">SalarUyuni</a>
+            <a href="hoteles.html">Hoteles</a>
+            <a href="PlatoTipico.html">Comida Tipica</a>
+            <a href="Mapa.html">Mapa</a>
+            <a href="Contacto.html" class="active">Contacto</a>
+            <p>Potosi <span id="cc-temp"></span>&deg;C<img id="cc-img" alt="Centigrado"></p>
+            <script src="js/weatherapi.js"></script>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <form id="formulario" method="post" autocomplete="off ">
+            <table>
+                <tr>
+                    <td id="pnombre">Nombre: </td>
+                    <td>
+                        <input id="txtNombre" type="text" name="nombre">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="papellido">
+                        Apellido:
+                    </td>
+                    <td>
+                        <input id="txtApellido" type="text" name="apellido">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="psexo">
+                        Sexo:
+                    </td>
+                    <td>
+                        <input type="radio" name="rsexo " value="h" required> Hombre
+                        <input type="radio" name="rsexo " value="m" required> Mujer
+                    </td>
+                </tr>
+                <tr>
+                    <td id="ptu">
+                        Tipo usuario:
+                    </td>
+                    <td>
+                        <select id="txtTipo" name="TipoTurismo">
+                        <option selected value="0 ">Seleccione</option>
+                        <option>Nacional</option>
+                        <option>Extranjero</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="informacion">
+                        Informacion de:
+                    </td>
+                    <td>
+                        <input type="radio" name="rinfo" value="su" required> Salar Uyuni
+                        <input type="radio" name="rinfo" value="tt" required> Toro Toro
+                    </td>
+                </tr>
+                <tr>
+                    <td id="pcorreo">
+                        Correo:
+                    </td>
+                    <td>
+                        <input id="txtCorreo" type="text" name="correo"> @
+                        <select id="txtCorreo2" name="correodireccion">
+                            <option selected value="0 ">Seleccione</option>
+                            <option>hotmail.com</option>
+                                <option>gmail.com</option>
+                                <option>live.com</option>
+                                <option>outlook.com</option>
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Informacion: </td>
+                    <td>
+                        <textarea name="informacion"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <button value="Cancelar" onclick="limpiar(); ">Cancelar</button></td>
+                    <td><button value="Enviar" onclick="validar(); ">Enviar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script type="text/javascript ">
+            $('#gracias').hide();
+
+            function enviar() {
+                $('#gracias').show('slow');
+            }
+
+            function enviado() {
+                $('#gracias').hide('slow');
+            }
+            $('#txtNombre').change(function() {
+                document.getElementById('pnombre').style.color = "#19EC0E ";
+            })
+            $('#txtApellido').change(function() {
+                document.getElementById('papellido').style.color = "#19EC0E ";
+            })
+            $('#txtTipo').change(function() {
+                document.getElementById('ptu').style.color = "#19EC0E ";
+            })
+            $('#txtCorreo').change(function() {
+                document.getElementById('pcorreo').style.color = "#19EC0E ";
+            })
+            $('#txtCorreo2').change(function() {
+                document.getElementById('pcorreo').style.color = "#19EC0E ";
+            })
+        </script>
+    </main>
+</body>
+
+</html>

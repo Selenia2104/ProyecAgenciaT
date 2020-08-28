@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link type="text/css" rel="stylesheet" href="./css/IndexLogReg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <style>
+        #msg {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: rgb(255, 51, 0);
+            color: #000000;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            right: 37%;
+            top: 30px;
+            font-size: 17px;
+            margin-right: 30px;
+        }
+
+        #msg.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+        @-webkit-keyframes fadein {
+            form {
+                top: 0px;
+                opacity: 0;
+            }
+            to {
+                top: 30px;
+                opacity: 1;
+            }
+        }
+        @keyframes fadein {
+            form {
+                top: 0px;
+                opacity: 0;
+            }
+            to {
+                top: 30px;
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes fadeout {
+            form {
+                top: 0px;
+                opacity: 0;
+            }
+            to {
+                top: 30px;
+                opacity: 1;
+            }
+        }
+        @keyframes fadeout {
+            form {
+                top: 0px;
+                opacity: 0;
+            }
+            to {
+                top: 30px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sigreg">
+        <form action="">
+            <h2 style="color: #ffffff;">
+                Registro de Usuario
+            </h2>
+            <input type="text" name="username" placeholder="Primer Nombre">
+            <br><br>
+            <input type="text" name="username" placeholder="Segundo Nombre">
+            <br><br>
+            <input type="password" name="pass" placeholder="Password">
+            <br><br>
+            <input type="password" name="pass" placeholder="Confirmación Password">
+            <br><br>
+            <input type="text" placeholder="Correo Email">
+            <br><br>
+            <input type="button" value="Conectar" onclick="myFuntion()">
+            <br><br>
+            <div id="msg">
+                Felicidades te has registrado
+            </div>
+            <script>
+                function myFuntion() {
+                    var x = document.getElementById("msg");
+                    x.className = "show";
+                    setTimeout(
+                        function() {
+                            x.className = x.className.replace("show","");
+                        },
+                        3000  
+                    )
+                }
+            </script>
+            Ya tengo cuenta
+            <a href="login.html" style="text-decoration: none; font-family: sans-serif; color: rgb(0, 247, 255);">
+                &nbsp; Conectar
+            </a>
+        </form>
+    </div>
+</body>
+</html>

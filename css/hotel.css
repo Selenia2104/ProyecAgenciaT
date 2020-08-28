@@ -1,0 +1,123 @@
+main {
+    width: 100%;
+    background: #1995ad;
+    background: linear-gradient(90deg, #d0e1f9 0%, #4d648d 50%, #283655 100%, #1e1f26 50%);
+}
+
+main h1,
+p {
+    text-align: start;
+    color: whitesmoke;
+}
+
+.ti {
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    margin: 10px;
+    width: 100%;
+}
+
+.contenedor img,
+div {
+    width: 60%;
+    margin: 15px;
+}
+
+.contenedor article {
+    text-align: left;
+}
+
+.contenedor button {
+    width: 250px;
+}
+
+
+/*Esto debe estar en la vista grande*/
+
+#reserva1,
+#reserva2,
+#reserva3 {
+    display: flex;
+    padding: 40px;
+    font-size: 15px;
+    width: 100%;
+}
+
+#reserva1 input,
+select,
+button,
+#reserva2 input,
+select,
+button,
+#reserva3 input,
+select,
+button {
+    margin: 8px;
+    width: 100%;
+}
+
+#infohotel1,
+#infohotel2,
+#infohotel3 {
+    z-index: 99;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform-origin: translate(-50%, -50%);
+    background: white;
+    border: 5px black solid;
+}
+
+#infohotel1 h1,
+#infohotel2 h1,
+#infohotel3 h1 {
+    text-align: center;
+}
+
+#infohotel1 img,
+#infohotel2 img,
+#infohotel3 img {
+    width: 50px;
+    float: right;
+    z-index: 99;
+    margin: 5px;
+}
+
+@media screen and (max-width:468px) {
+    #reserva1 input,
+    select,
+    button,
+    #reserva2 input,
+    select,
+    button,
+    #reserva3 input,
+    select,
+    button {
+        float: left;
+        width: 100%;
+    }
+    #infohotel1,
+    #infohotel2,
+    #infohotel3 {
+        left: 1%;
+        top: 1%;
+        height: 650px;
+    }
+    .contenedor {
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+    .contenedor img,
+    div {
+        width: 150px;
+        margin: 0 auto;
+    }
+    table td {
+        display: block;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login from course web 2 programming</title>
+    <link type="text/css" rel="stylesheet" href="./css/IndexLogin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    
+</head>
+<body>
+    
+    <div class="signin">
+        <form action="./Home.html" method="POST" id="formulario" name="formulario">
+            <h2 style="color: white">
+                Log In
+            </h2>
+            <input type="text" placeholder="Usuario" name="usuario" id="usuario">
+            <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email">
+            <input type="password" name="pass" placeholder="Contraseña" id="pass">
+            <br><br>
+            <a>
+                <input type="button" value="Conectarse" id="submit" name="submit" onclick="veri()">
+            </a>
+            <br><br>
+            <div class="container">
+                <a href="#" style="margin-right: 0px; font-size: 13px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    Resetear Password
+                </a>
+                <a href="#" style="margin-right: 0px; font-size: 13px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    Se olvido la Contraseña
+                </a>
+            </div>
+            <br><br><br><br><br><br>
+            No tengo Cuenta?
+            <a href="./loginReg.html">
+                &nbsp;Crear Cuenta
+            </a>
+        </form>
+    </div>
+    <script>
+        // para password 
+        document.getElementById("pass").addEventListener("input", (e) => {
+        let value = e.target.value;
+        e.target.value = value.replace(/[^A-Z\^a-z\d?=]/g, "");
+        console.log(value);
+        });
+        // correo
+        document.getElementById("email").addEventListener("input", (e) => {
+        let value = e.target.value;
+        e.target.value = value.replace(/[^A-Z\^a-z\d.@]/g, "");
+        console.log(value);
+        });
+        // nombre
+        document.getElementById("usuario").addEventListener("input", (e) => {
+        let value = e.target.value;
+        e.target.value = value.replace(/[^A-Z\^a-z\d-]/g, "");
+        if(value.length > 10) {
+            alert("El usuario solo tienen 10 letras con numeros \n Usuario-00 ")
+            e.target.value = "";
+        }
+        console.log(value.length);
+        });
+
+        function veri() {
+            usu = document.getElementById("usuario").value;
+            ema = document.getElementById("email").value;
+            pas = document.getElementById("pass").value;
+            if(usu == "selenia" && ema == "jhegelma@gmail.com" && pas == "1234" ) {
+                alert("Verifique que ingreso datos");
+            } else {
+                if(usu.length == 7 && pas.length == 4) {
+                    location.href ="Home.html";
+                } else {
+                    alert("Verifique el tamaño del usuario o contraseña");
+                } 
+            }
+        }
+    </script>
+</body>
+</html>

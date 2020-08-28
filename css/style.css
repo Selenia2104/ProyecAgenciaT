@@ -1,0 +1,100 @@
+/*RESPONSIVE*/
+
+.piepagina {
+    text-align: center;
+    width: 100%;
+    background-color: cyan;
+}
+
+.piepagina h3 {
+    text-align: center;
+}
+
+
+/*Grande*/
+
+@media screen and (min-width:1024px) {
+    .piepagina img {
+        width: 20px;
+    }
+    .piepagina a:hover img {
+        width: 30px;
+    }
+    .piepagina h3 {
+        font-size: 15px;
+    }
+}
+
+
+/*grande*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .post {
+        background: violet;
+        width: 30%;
+        height: 300px;
+        margin: 9px;
+        text-align: center;
+    }
+    #contenedorcombos .post {
+        display: inline-block;
+    }
+    .post>a img {
+        margin: auto;
+        width: 250px;
+        height: 250px;
+    }
+    .piepagina img {
+        width: 20px;
+    }
+    .piepagina a:hover img {
+        width: 30px;
+    }
+    .piepagina h3 {
+        font-size: 15px;
+    }
+    #fecha {
+        font-size: 15px;
+        color: black;
+    }
+    #slide img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+/*Mediano*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {}
+
+
+/*PEQUEÑO*/
+
+@media screen and (max-width:480px) {
+    .post {
+        width: 100%;
+        background: orange;
+    }
+    .post>a img {
+        width: 280px;
+        height: 280px;
+    }
+    #contenedorcombos .post {
+        display: inline;
+    }
+    .piepagina img {
+        width: 20px;
+    }
+    .piepagina a:hover img {
+        width: 30px;
+    }
+    .piepagina h3 {
+        font-size: 15px;
+    }
+}
+
+#slide img {
+    width: 100%;
+    height: 300px;
+}

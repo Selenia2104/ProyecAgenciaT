@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lugares Bonitos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/mrd.css" rel="stylesheet">
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/mapa.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="Home.html"><img id="logo" src="img/lgd.png" alt="Logotipo"></a>
+            <a href="Home.html">Home</a>
+            <a href="ToroToro.html">ToroToro</a>
+            <a href="Salar.html">SalarUyuni</a>
+            <a href="hoteles.html">Hoteles</a>
+            <a href="PlatoTipico.html">Comida Tipica</a>
+            <a href="Mapa.html" class="active">Mapa</a>
+            <a href="Contacto.html">Contacto</a>
+            <p>Potosi <span id="cc-temp"></span>&deg;C<img id="cc-img" alt="Centigrados"></p>
+            <script src="js/weatherapi.js"></script>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td>Salar de Uyuni</td>
+                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925504.6674103963!2d-67.39493661312507!3d-19.547840404600308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93ffbad958d3f2bd%3A0x1455841e2c4e6653!2sUyuni!5e0!3m2!1ses-419!2sbo!4v1567102675001!5m2!1ses-419!2sbo"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+
+            </tr>
+            <tr>
+                <td>Toro Toro</td>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1154060.8867331648!2d-66.62227130280097!3d-18.17599726658141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fb575504f11d27%3A0xcd803a77753ad8f5!2sTorotoro!5e0!3m2!1ses-419!2sbo!4v1567102865629!5m2!1ses-419!2sbo"
+                        frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

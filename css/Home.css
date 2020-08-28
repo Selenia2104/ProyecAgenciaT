@@ -1,0 +1,272 @@
+/*Estilo normal*/
+
+.post {
+    box-shadow: inset 10px 10px 10px 0px #bdbc7a;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 1em;
+    width: 30%;
+    text-align: center;
+}
+
+#promo1,
+#promo2,
+#promo3,
+#promo4,
+#promo5,
+#promo6 {
+    z-index: 99;
+    width: 98%;
+    height: 696px;
+    position: absolute;
+    left: 1%;
+    top: 7%;
+    text-align: center;
+    transform-origin: translate(-50%, -50%);
+    background: linear-gradient(90deg, #2273be 0%, #9675e4 6%, #ff94f1 100%, #696968 50%);
+    border: 5px black solid;
+}
+
+#promo1 img,
+#promo2 img,
+#promo3 img,
+#promo4 img,
+#promo5 img,
+#promo6 img {
+    width: 50px;
+    float: right;
+    z-index: 99;
+    margin: 5px;
+}
+
+.iconw {
+    width: 20px;
+    float: left;
+}
+
+#promo4 iframe,
+#promo5 iframe,
+#promo6 iframe {
+    width: 90%;
+    height: 500px;
+}
+
+#bienvenidos {
+    text-align: center;
+    background: #c9cbd0;
+    box-shadow: 20px 15px 10px 0px #909090;
+}
+
+.piepagina {
+    text-align: center;
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+}
+
+.piepagina h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.piepagina img {
+    width: 20px;
+}
+
+.piepagina a:hover img {
+    width: 30px;
+}
+
+#fecha {
+    font-size: 15px;
+    color: white;
+}
+
+#slide {
+    width: 100%;
+    text-align: center;
+}
+
+#contenedorcombos .post {
+    display: inline-block;
+}
+
+.left,
+.right {
+    color: white;
+}
+
+#promo1>.left,
+#promo2>.left,
+#promo3>.left,
+#promo4>.left,
+#promo5>.left,
+#promo6>.left {
+    float: left;
+    vertical-align: top;
+    margin: 2%;
+    overflow: hidden;
+    text-align: justify;
+}
+
+#promo1>.right,
+#promo2>.right,
+#promo3>.right,
+#promo4>.right,
+#promo5>.right,
+#promo6>.right {
+    float: right;
+    vertical-align: top;
+    margin: 2%;
+    overflow: hidden;
+    text-align: justify;
+}
+
+
+/*Vista muy grande*/
+
+@media screen and (min-width:1024px) {
+    #promo1>.left,
+    #promo2>.left,
+    #promo3>.left,
+    #promo4>.left,
+    #promo5>.left,
+    #promo6>.left {
+        width: 46%;
+        height: 550px;
+    }
+    #promo1>.right,
+    #promo2>.right,
+    #promo3>.right,
+    #promo4>.right,
+    #promo5>.right,
+    #promo6>.right {
+        width: 46%;
+        height: 550px;
+    }
+    #slide img {
+        width: 100%;
+        height: 500px;
+    }
+    #bienvenidos {
+        width: 60%;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    #bienvenidos h1 {
+        font-family: tempus sans itc;
+        text-align: center;
+    }
+    #contenedorcombos {
+        width: 100%;
+        padding: 1em;
+    }
+    .post {
+        width: 30%;
+    }
+    .post>a img {
+        width: 250px;
+        height: 260px;
+    }
+    /*Comando de lightbox ESTABA EN EL MRD*/
+    #mc {
+        z-index: 1;
+        background: rgb(255, 255, 2);
+        width: 400px;
+        height: 400px;
+        position: relative;
+        margin: 20px auto;
+    }
+    #mc a img {
+        width: 200px;
+    }
+    #promo1,
+    #promo2,
+    #promo3,
+    #promo4,
+    #promo5,
+    #promo6 {
+        left: 1%;
+        top: 7%;
+    }
+}
+
+
+/*Tables Horizontales de Compus pequeñas*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    #slide img {
+        width: 100%;
+        height: 500px;
+    }
+    #bienvenidos {
+        width: 60%;
+        margin-left: 20%;
+        padding: 2em;
+    }
+    .post {
+        width: 25%;
+        margin: 25px;
+    }
+    .post>a img {
+        width: 150px;
+        height: 160px;
+    }
+    .piepagina {
+        background: red;
+    }
+    #promo1,
+    #promo2,
+    #promo3,
+    #promo4,
+    #promo5,
+    #promo6 {
+        left: 1%;
+        top: 1%;
+    }
+}
+
+
+/*Celulares horizontal y tablet vertical*/
+
+@media screen and (min-width:468px) and (max-width:768px) {}
+
+@media screen and (max-width:468px) {
+    #slide img {
+        width: 100%;
+        height: 250px;
+    }
+    #bienvenidos {
+        width: 100%;
+    }
+    .post {
+        width: 30%;
+        margin: 25px;
+    }
+    .post>a img {
+        width: 80px;
+        height: 80px;
+    }
+    #promo1>.left,
+    #promo2>.left,
+    #promo3>.left,
+    #promo4>.left,
+    #promo5>.left,
+    #promo6>.left {
+        margin: 0;
+        width: 45%;
+        height: 550px;
+        font-size: 13px;
+    }
+    #promo1>.right,
+    #promo2>.right,
+    #promo3>.right,
+    #promo4>.right,
+    #promo5>.right,
+    #promo6>.right {
+        padding: 0;
+        margin: 0;
+        width: 45%;
+        height: 550px;
+        font-size: 13px;
+    }
+}

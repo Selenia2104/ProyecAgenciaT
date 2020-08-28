@@ -1,0 +1,67 @@
+#formulario {
+    background: yellow;
+}
+
+#formulario {
+    padding: 5px;
+    width: 100%;
+    background: beige;
+    border: 1px solid rgb(238, 15, 15);
+    right: 50%;
+}
+
+#formulario p {
+    padding: 25px;
+    font-size: 20px;
+    border: 3px solid black;
+    margin: 15px;
+}
+
+#formulario input,
+select,
+textarea,
+option {
+    display: inline;
+    margin: 25px;
+}
+
+#formulario textarea {
+    width: 500px;
+    height: 350px;
+}
+
+#formulario input select option {
+    width: 100%;
+}
+
+#formulario button {
+    width: 200px;
+    height: 30px;
+}
+
+#gracias {
+    z-index: 99;
+    width: 50%;
+    height: 80px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform-origin: translate(-50%, -50%);
+    background: white;
+    border: 5px black solid;
+    text-align: center;
+}
+
+@media screen and (max-width:468px) {
+    table td {
+        display: block;
+        width: 100%;
+    }
+    table td>select {
+        display: block;
+    }
+    #formulario textarea {
+        width: 85%;
+        height: 350px;
+    }
+}

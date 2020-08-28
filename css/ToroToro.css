@@ -1,0 +1,61 @@
+/*Modificar para el json*/
+    
+main {
+    background: #f78f34;
+    background: linear-gradient(90deg, #363237 0%, #2d4262 6%, #73605b 100%, #d09683 100%);
+}
+
+#htitulo>h1 {
+    font-family: harrington;
+    font-size: 55pt;
+    text-align: center;
+    color: rgb(255, 145, 1);
+}
+
+#htitulo>p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(255, 145, 1);
+}
+
+#info {
+    float: left;
+    color: rgb(192, 154, 84);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 25px;
+}
+/*Para la estructura de los lugares*/
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table td {
+    width: 50%;
+}
+/*Cambio de la imagen*/
+
+table p {
+    color: rgb(192, 154, 84);
+}
+
+table h3 {
+    font-family: tempus sans itc;
+    font-size: 20pt;
+    color: rgb(192, 154, 84);
+}
+
+table img {
+    width: 80%;
+    height: 300px;
+}
+
+@media screen and (max-width:468px) {
+    table img {
+        width: 80%;
+        height: 150px;
+    }
+}
